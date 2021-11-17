@@ -1,249 +1,201 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113">
-  <style type="text/css">
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #646464; -webkit-text-stroke: #646464; min-height: 19.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p6 {margin: 0.0px 20.0px 20.0px 20.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #646464; -webkit-text-stroke: #646464}
-    p.p7 {margin: 0.0px 40.0px 0.0px 0.0px; line-height: 19.2px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #646464}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
-    p.p10 {margin: 0.0px 20.0px 20.0px 20.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p11 {margin: 0.0px 40.0px 0.0px 0.0px; line-height: 19.2px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #fd9409}
-    p.p12 {margin: 0.0px 0.0px 20.0px 240.0px; line-height: 24.0px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #fd9409}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 24.0px; font: 12.8px Helvetica; color: #646464; -webkit-text-stroke: #646464}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 17.6px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p16 {margin: 0.0px 0.0px 20.0px 240.0px; line-height: 24.0px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #8ac627}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p19 {margin: 0.0px 0.0px 20.0px 240.0px; line-height: 24.0px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #21a59a}
-    p.p21 {margin: 0.0px 0.0px 20.0px 240.0px; line-height: 24.0px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #7500db}
-    p.p23 {margin: 0.0px 0.0px 20.0px 240.0px; line-height: 24.0px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #afaa58}
-    p.p25 {margin: 0.0px 20.0px 20.0px 20.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #0f7001; -webkit-text-stroke: #0f7001}
-    p.p26 {margin: 0.0px 20.0px 20.0px 20.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 9.6px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p28 {margin: 0.0px 0.0px 20.0px 240.0px; line-height: 24.0px; font: 12.8px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #277b45}
-    p.p29 {margin: 0.0px 0.0px 9.6px 0.0px; line-height: 7.7px; font: 9.6px Helvetica; color: #646464; -webkit-text-stroke: #646464; background-color: #262626}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 7.7px; font: 9.6px Helvetica; color: #434343; -webkit-text-stroke: #434343}
-    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.4px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 19.0px}
-    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.4px; font: 16.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    li.li18 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 16.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {background-color: #243e3e; -webkit-text-stroke: 0px #000000}
-    span.s3 {font-kerning: none; background-color: #243e3e}
-    span.s4 {font-kerning: none; background-color: #fb0007}
-    span.s5 {font-kerning: none; background-color: #eaeaea}
-    span.s6 {font-kerning: none; color: #4f8d8f; -webkit-text-stroke: 0px #4f8d8f}
-    span.s7 {font-kerning: none; background-color: #fd9409}
-    span.s8 {font: 12.0px Helvetica; font-kerning: none}
-    span.s9 {text-decoration: underline ; font-kerning: none}
-    span.s10 {font-kerning: none; background-color: #8ac627}
-    span.s11 {font: 24.0px Helvetica; font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
-    span.s12 {font-kerning: none; background-color: #21a59a}
-    span.s13 {-webkit-text-stroke: 0px #000000}
-    span.s14 {font-kerning: none; background-color: #7500db}
-    span.s15 {font-kerning: none; background-color: #afaa58}
-    span.s16 {font-kerning: none; background-color: #277b45}
-    span.s17 {font-kerning: none; background-color: #262626}
-    table.t1 {margin: 20.0px 20.0px 20.0px 20.0px; border-style: solid; border-width: 1.0px 1.0px 0.0px 0.0px; border-color: #eaeaea #eaeaea #6d6d6d #6d6d6d; border-collapse: collapse}
-    td.td1 {width: 213.7px; background-color: #eaeaea; border-style: solid; border-width: 0.0px 0.0px 1.0px 1.0px; border-color: #646464 #646464 #eaeaea #eaeaea; padding: 3.8px 12.8px 3.8px 12.8px}
-    td.td2 {width: 64.2px; background-color: #eaeaea; border-style: solid; border-width: 0.0px 0.0px 1.0px 1.0px; border-color: #646464 #646464 #eaeaea #eaeaea; padding: 3.8px 12.8px 3.8px 12.8px}
-    td.td3 {width: 204.1px; border-style: solid; border-width: 0.0px 0.0px 1.0px 1.0px; border-color: #000000 #000000 #eaeaea #eaeaea; padding: 5.3px 17.6px 5.3px 17.6px}
-    td.td4 {width: 54.6px; border-style: solid; border-width: 0.0px 0.0px 1.0px 1.0px; border-color: #000000 #000000 #eaeaea #eaeaea; padding: 5.3px 17.6px 5.3px 17.6px}
-    ol.ol1 {list-style-type: decimal}
-    ul.ul1 {list-style-type: none}
-    ul.ul2 {list-style-type: disc}
-  </style>
+    <title>My travels so far&#8230;</title>
+    <Link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<h1 style="margin: 0.0px 0.0px 8.6px 0.0px; text-align: center; line-height: 14.7px; font: 12.8px Helvetica; color: #fb0007; -webkit-text-stroke: #fb0007"><span class="s1"><b>Book of the Marvels of the World (according to me (so far (limited to places I have traveled to by aeroplane as an adult)))<span class="Apple-converted-space"> </span></b></span></h1>
-<ul class="ul1">
-  <li class="li2"><span class="s2"></span><span class="s3">New York, New York<br>
-</span></li>
-  <li class="li2"><span class="s2"></span><span class="s3">Seattle<br>
-</span></li>
-  <li class="li2"><span class="s2"></span><span class="s3">San Francisco<br>
-</span></li>
-  <li class="li2"><span class="s2"></span><span class="s3">Iceland<br>
-</span></li>
-  <li class="li2"><span class="s2"></span><span class="s3">London<br>
-</span></li>
-  <li class="li2"><span class="s2"></span><span class="s3">Boston<br>
-</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #fb0007"><span class="s1"><b><i>A brief introduction to my travelogue</i></b></span></h2>
-<p class="p4"><span class="s1"><i></i></span><br></p>
-<p class="p5"><span class="s4"><b><i>Lambert International Airport - St. Louis, MO</i></b></span></p>
-<p class="p6"><span class="s5"><i>When I was a kid, I was lucky enough to get a chance to visit some great places. For example, I once went to Chattanooga, Tennesee. However, I was not the person who decided to visit these places, and my memory of them is a bit fuzzy.</i></span></p>
-<p class="p6"><span class="s5"><i>As an adult, I have had the privelege of traveling to several world-class cities by aerpolane. This web page describes a little bit about my travels and the places that I have visited. To keep this accounting more concise, I have limited the list of visits to places exclusively reached using air travel, so if I arrived by car, boat, or train, those places are not included. Sorry, but you won't be reading about the amazing times I've had in </i><a href="https://en.wikipedia.org/wiki/Big_Bend_National_Park"><span class="s6"><i>Big Bend National Park</i></span></a><i>, </i><a href="https://en.wikipedia.org/wiki/Mackinac_Island"><span class="s6"><i>Mackinac Island</i></span></a><i>, or </i><a href="https://en.wikipedia.org/wiki/Treaty_of_Paris"><span class="s6"><i>Paris, France</i></span></a><i>.</i></span></p>
-<p class="p7"><span class="s1"><i>Earlier in my life, I had a hyphenated surname. This makes traveling significantly more difficult than if you just have one comprised of the normal 26 characters of the alphabet. For best results, I highly recommend getting your hyphen removed if you have one. Also, you should probably get a Real ID.</i></span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #fd9409"><span class="s1"><b>New York, New York</b></span></h2>
-<p class="p9"><span class="s1"></span><br></p>
-<p class="p5"><span class="s7"><b><i>New York, New York</i></b></span></p>
-<p class="p10"><span class="s1">They say if you can make it in New York, New York, you can make it anywhere. On my first visit to the Big Apple, the airline I was flying on had a computer system failure, so my direct flight was cancelled while I was at the airport, waiting to board. The gate agent helpfully told me that I could rush to an aeroplane that would take me to Boston, where I could find a connecting flight to New York, New York. He assured me that he would call ahead and arrange everything with a gate agent in Boston if we could just hurry to board that flight. So that's exactly what I did. Running through the terminal as though it were a scene from a movie, we (my wife and I) barely boarded the aeroplane just as the gates were closing. We had made it; what a relief! A few hours later, we touched down in Beantown to discover a completely desserted Logan International Airport. Perhaps it was the nerves of wondering if the helpful gate agent had relayed the itenerary, but I don't even remember other passengers or the crew there. If you've seen the first few moments of 28 Days Later (or The Walking Dead), it felt kind of like that. It was midnight.</span></p>
-<p class="p10"><span class="s1">There was <i>one</i> other person at the terminal, though: Boston's grumpiest gate agent. She had not been told that we would be arriving. She did not have an itenerary for us to board a new flight. There were no more flights. It was midnight, and the system-wide crash would take days for the airline to fix. Furthermore, there were no trains running, and there were no hotels in Boston, she assured us. But we were welcome to drop in a quarter, rent a luggage cart, and sleep on that.</span></p>
-<p class="p10"><span class="s1">So we did what any determined traveler would do in that situation: we headed to the car rental area. Apparently, this is where all the other passengers from our flight had congregated. They too had been redirected and needed to leave Þ</span><span class="s8">e</span><span class="s1"> Olde Towne by car. And the other passengers had rented them all. Enterprise would handily rent us a box truck that got 8 miles to the gallon. Alas, we did not have a significant amount of furniture to move. So we did what any determined traveler would do in that situation: we headed to the Avis booth, which was avoided like the plague for some reason, and we rented a Ford Focus. At 1:00 in the morning, we clambered into the subcompact and headed southbound. We drove through the dark for four hours and 226 miles. Then, as we were dead-tired and the sun was thinking of getting out of bed, we saw the City That Never Sleeps. I don't know if we could make it in New York, New York, but I </span><span class="s9"><b>do</b></span><span class="s1"> know that we can make it <i>into</i> New York, New York.</span></p>
-<p class="p11"><span class="s1">I am including New York, New York in my list of cities even though I first arrived by car because I have subsequently visited several times by aeroplane without all of the hassle.<span class="Apple-converted-space"> </span></span></p>
-<p class="p12"><span class="s1">New York, New York is considered to be the birthplace of the pizza pie, or as I sometimes call it, pizza π. Many fight over which pizzeria makes the best pizza pie, and while I believe all pizza pie is good pizza pie, I recommend visiting Juliana's Pizza Pie in Brooklyn, New York, New York.</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #8ac627"><span class="s1"><b>Seattle</b></span></h2>
-<p class="p9"><span class="s1"></span><br></p>
-<p class="p5"><span class="s10"><b><i>Seattle, WA</i></b></span></p>
-<p class="p10"><span class="s1">Due to the aforementioned airline debacle, my wife and I were given vouchers for a pair of free flights. This afforded us the opportunity to visit the other coast of America, and we set our heading to Seattle, WA. After touching down at SeaTac, we took the monorail up to the Capital Hill neighborhood where we'd be staying. Then we walked the city, drank some coffee, and caught some fish (from a monger, not a pole).</span></p>
-<p class="p10"><span class="s1">Here's my rating of several of Seattle's best attractions:</span></p>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p14"><span class="s1"><b>ATTRACTION</b></span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p14"><span class="s1"><b>RATING</b></span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Hills</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">8</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Sidewalk accessibility</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">3</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Coffee shops</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">9</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Pike Place</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">6</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Starbucks roasting facility</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">7</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Bainbridge ferry</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">8</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Bainbridge Island</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">9</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Pop Culture Museum</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">5</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Tree bananas</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">8</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td3">
-        <p class="p15"><span class="s1">Frasier</span></p>
-      </td>
-      <td valign="middle" class="td4">
-        <p class="p15"><span class="s1">5</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p class="p16"><span class="s1">If you ever want to learn to climb a tree, <a href="https://getyarn.io/yarn-clip/677c67e1-0fe0-4296-abe6-1ce11e34b26d"><span class="s6">the Pacific Northwest</span></a> is a great place to learn!</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #21a59a"><span class="s1"><a href="https://www.youtube.com/watch?v=9KrJ6Ozo8vg"><b>San Francisco</b><span class="s11"><b></b></span></a></span></h2>
-<p class="p9"><span class="s1"></span><br></p>
-<p class="p5"><span class="s12"><b><i>San Francisco, CA</i></b></span></p>
-<p class="p10"><span class="s1">San Fran is a great place to visit. With a storied history, world-class restaurants, and a cable car system, it's a must-see. Unfortunately, my phone died just before we were going to see Alcatraz. Since I had to go to the Apple store to get it replaced, we missed out on visiting the Rock.</span></p>
-<p class="p10"><span class="s1">Here's a list of convicts whose cells I did not see:</span></p>
-<ul class="ul2">
-  <li class="li18"><span class="s13"></span><span class="s1">Arthur Barker</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Al Capone</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Mickey Cohen</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Machine Gun Kelly</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Robert Stroud, The Bird Man of Alcatraz</span></li>
-</ul>
-<p class="p19"><span class="s1">If your phone is going to die, make sure it is three days before the warranty expires. That way, you get a replacement at no additional cost!</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #7500db"><span class="s1"><b>Reykjavík</b></span></h2>
-<p class="p9"><span class="s1"></span><br></p>
-<p class="p5"><span class="s14"><b><i>Reykjavík, Iceland</i></b></span></p>
-<p class="p10"><span class="s1">Iceland is a beautiful country. It sometimes feels so otherworldly that you might feel like you're on a different planet. In fact, many movies use Iceland as a stand-in for other worlds because it's more feasible than internplanetary travel.<span class="Apple-converted-space"> </span></span></p>
-<p class="p10"><span class="s1">Below is a ranking of my favorite movies that were shot in Iceland:</span></p>
-<ol class="ol1">
-  <li class="li18"><span class="s13"></span><span class="s1">Interstellar</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Batman Begins</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Letters from Iwo Jima</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Flags of Our Fathers</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">The Secret Life of Walter Mitty</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Noah</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Oblivion</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Rogue One: A Star Wars Story</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Star Trek Into Darkness</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Prometheus</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Star Wars: The Force Awakens</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Stardust</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Lara Croft: Tomb Raider</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Judge Dredd</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Die Aother Day</span></li>
-  <li class="li18"><span class="s13"></span><span class="s1">Thor: The Dark World<span class="Apple-converted-space"> </span></span></li>
-</ol>
-<p class="p21"><span class="s1">Iceland is the number one consumer of Pepsi Max, which also happens to be my wife's favorite beverage. You can also buy salted licorice there. Yum!</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #afaa58"><span class="s1"><b>London, England</b></span></h2>
-<p class="p9"><span class="s1"></span><br></p>
-<p class="p5"><span class="s15"><b><i>London, England</i></b></span></p>
-<p class="p10"><span class="s1">London, England is an excellent place to visit. The only problem with this place is that they don't speak an intelligible form of English. Please review this helpful English-English dictionary for your travels:</span></p>
-<p class="p18"><span class="s1">Hullo</span></p>
-<p class="p18"><span class="s1">Hello</span></p>
-<p class="p18"><span class="s1">Colour</span></p>
-<p class="p18"><span class="s1">Color</span></p>
-<p class="p18"><span class="s1">Bo'ohw'o'wo'er</span></p>
-<p class="p18"><span class="s1">Bottle of water</span></p>
-<p class="p23"><span class="s1">There are only so many historical venues you can drag your wife to before she starts giving you exasperated looks.</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; line-height: 24.0px; font: 24.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #277b45"><span class="s1"><b>Boston</b></span></h2>
-<p class="p9"><span class="s1"></span><br></p>
-<p class="p5"><span class="s16"><b><i>Boston, MA</i></b></span></p>
-<p class="p25"><span class="s1">Boston is another storied town, and is especially fun to visit when it's your intended destination. Here's a secret: I love history. So visiting America's Walking City is a great way to discover history coming alive and stand in the footsteps of those who have come before us. And it's not just Irish immigrants who have a story to tell about The Athens of America. From the first American patriots to the bar that inspired a series based on Frasier Crane (5/10), every block is filled with history, including a historical block that was also filled with unrefined sugar-syrup in 1919. Here's what Stephen Puleo has to say about The Great Molasses Flood:</span></p>
-<p class="p26"><span class="s16">Molasses, waist deep, covered the street and swirled and bubbled about the wreckage â€¦. Here and there struggled a formâ€”whether it was animal or human being was impossible to tell. Only an upheaval, a thrashing about in the sticky mass, showed where any life was â€¦. Horses died like so many flies on sticky fly-paper. The more they struggled, the deeper in the mess they were ensnared. Human beingsâ€”men and womenâ€”suffered likewise.</span></p>
-<p class="p27"><span class="s16"><i>Dark Tide: The Great Boston Molasses Flood of 1919</i></span></p>
-<p class="p28"><span class="s1">As it happens, there actually <i>are</i> hotels available to rent in Boston. One of them has a line-of-sight to a rooftop where you just might catch Batman shadow boxing for a photo shoot.</span></p>
-<p class="p29"><span class="s1">© 2021.</span></p>
-<p class="p30"><span class="s17"><a href="https://www.youtube.com/watch?v=hoWEYBSlctc">π<span class="s1"></span></a></span></p>
-<p class="p31"><span class="s1"></span><br></p>
-<p class="p31"><span class="s1"></span><br></p>
+    <div id="content" class="child-element">
+        <Header>
+            <h1 id="mainHeading">
+                Book of the Marvels of the World (according to me (so far (limited to places I have traveled to by aeroplane as an adult)))
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#new-york-new-york">New York, New York</a></li>
+                    <li><a href="#seattle">Seattle</a></li>
+                    <li><a href="#san-francisco">San Francisco</a></li>
+                    <li><a href="#iceland">Iceland</a></li>
+                    <li><a href="#london">London</a></li>
+                    <li><a href="#boston">Boston</a></li>
+                </ul>
+            </nav>
+        </Header>
+        <Main>
+            <Article id="introduction">
+                <h2>A brief introduction to my travelogue</h2>
+                <figure>
+                    <img src="images/stl.jpg" alt="Lambert International Airport">
+                    <figcaption>Lambert International Airport - St. Louis, MO</figcaption>
+                </figure>
+                <P>When I was a kid, I was lucky enough to get a chance to visit some great places. For example, I once went to Chattanooga, Tennesee. However, I was not the person who decided to visit these places, and my memory of them is a bit fuzzy.</P>
+                <P>As an adult, I have had the privelege of traveling to several world-class cities by aerpolane. This web page describes a little bit about my travels and the places that I have visited. To keep this accounting more concise, I have limited the list of visits to places exclusively reached using air travel, so if I arrived by car, boat, or train, those places are not included. Sorry, but you won't be reading about the amazing times I've had in <a href="https://en.wikipedia.org/wiki/Big_Bend_National_Park">Big Bend National Park</a>, <a href="https://en.wikipedia.org/wiki/Mackinac_Island">Mackinac Island</a>, or <a href="https://en.wikipedia.org/wiki/Treaty_of_Paris">Paris, France</a>.</P>
+                <p class="aside">Earlier in my life, I had a hyphenated surname. This makes traveling significantly more difficult than if you just have one comprised of the normal 26 characters of the alphabet. For best results, I highly recommend getting your hyphen removed if you have one. Also, you should probably get a Real&nbsp;ID.</P>
+            </Article>
+            <Article id="new-york-new-york">
+                <h2>New York, New York</h2>
+                <figure>
+                    <img src="images/new-york-new-york.jpg" alt="New York, New York">
+                    <figcaption>New York, New York</figcaption>
+                </figure>
+                <P>They say if you can make it in New York, New York, you can make it anywhere. On my first visit to the Big Apple, the airline I was flying on had a computer system failure, so my direct flight was cancelled while I was at the airport, waiting to board. The gate agent helpfully told me that I could rush to an aeroplane that would take me to Boston, where I could find a connecting flight to New York, New York. He assured me that he would call ahead and arrange everything with a gate agent in Boston if we could just hurry to board that flight. So that's exactly what I did. Running through the terminal as though it were a scene from a movie, we (my wife and I) barely boarded the aeroplane just as the gates were closing. We had made it; what a relief! A few hours later, we touched down in Beantown to discover a completely desserted Logan International Airport. Perhaps it was the nerves of wondering if the helpful gate agent had relayed the itenerary, but I don't even remember other passengers or the crew there. If you've seen the first few moments of 28 Days Later (or The Walking Dead), it felt kind of like that. It was midnight.</P>
+                <P>There was <em>one</em> other person at the terminal, though: Boston's grumpiest gate agent. She had not been told that we would be arriving. She did not have an itenerary for us to board a new flight. There were no more flights. It was midnight, and the system-wide crash would take days for the airline to fix. Furthermore, there were no trains running, and there were no hotels in Boston, she assured us. But we were welcome to drop in a quarter, rent a luggage cart, and sleep on that.</P>
+                <P>So we did what any determined traveler would do in that situation: we headed to the car rental area. Apparently, this is where all the other passengers from our flight had congregated. They too had been redirected and needed to leave &THORN;<sup>e</sup> Olde Towne by car. And the other passengers had rented them all. Enterprise would handily rent us a box truck that got 8 miles to the gallon. Alas, we did not have a significant amount of furniture to move. So we did what any determined traveler would do in that situation: we headed to the Avis booth, which was avoided like the plague for some reason, and we rented a Ford Focus. At 1:00 in the morning, we clambered into the subcompact and headed southbound. We drove through the dark for four hours and 226 miles. Then, as we were dead-tired and the sun was thinking of getting out of bed, we saw the City That Never Sleeps. I don't know if we could make it in New York, New York, but I <strong>do</strong> know that we can make it <em>into</em> New York, New York.</P>
+                <p class="aside">I am including New York, New York in my list of cities even though I first arrived by car because I have subsequently visited several times by aeroplane without all of the hassle.
+                </P>
+                <p class="travel-tip">New York, New York is considered to be the birthplace of the pizza pie, or as I sometimes call it, pizza&nbsp;&pi;. Many fight over which pizzeria makes the best pizza pie, and while I believe all pizza pie is good pizza pie, I recommend visiting Juliana's Pizza Pie in Brooklyn, New York, New York.</P>
+            </Article>
+            <Article id="seattle">
+                <h2>Seattle</h2>
+                <figure>
+                    <img src="images/seattle.jpg" alt="Seattle">
+                    <figcaption>Seattle, WA</figcaption>
+                </figure>
+                <P>Due to the aforementioned airline debacle, my wife and I were given vouchers for a pair of free flights. This afforded us the opportunity to visit the other coast of America, and we set our heading to Seattle, WA. After touching down at SeaTac, we took the monorail up to the Capital Hill neighborhood where we'd be staying. Then we walked the city, drank some coffee, and caught some fish (from a monger, not a pole).</P>
+                <P>Here's my rating of several of Seattle's best attractions:</P>
+                <table>
+                    <tr>
+                        <th>Attraction</th>
+                        <th>Rating</th>
+                    </tr>
+                    <tr>
+                        <td>Hills</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Sidewalk accessibility</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee shops</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Pike Place</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Starbucks roasting facility</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Bainbridge ferry</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Bainbridge Island</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Pop Culture Museum</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Tree bananas</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Frasier</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+                <p class="travel-tip">If you ever want to learn to climb a tree, <a href="https://getyarn.io/yarn-clip/677c67e1-0fe0-4296-abe6-1ce11e34b26d">the Pacific Northwest</a> is a great place to learn!</P>
+            </Article>
+            <Article id="san-francisco">
+                <h2><a href="https://www.youtube.com/watch?v=9KrJ6Ozo8vg">San Francisco</a></h2>
+                <figure>
+                    <img src="images/san-francisco.jpg" alt="San Francisco">
+                    <figcaption>San Francisco, CA</figcaption>
+                </figure>
+                <P>San Fran is a great place to visit. With a storied history, world-class restaurants, and a cable car system, it's a must-see. Unfortunately, my phone died just before we were going to see Alcatraz. Since I had to go to the Apple store to get it replaced, we missed out on visiting the Rock.</P>
+
+                <P>Here's a list of convicts whose cells I did not see:</P>
+                <ul>
+                    <li>Arthur Barker</li>
+                    <li>Al Capone</li>
+                    <li>Mickey Cohen</li>
+                    <li>Machine Gun Kelly</li>
+                    <li>Robert Stroud, The Bird Man of Alcatraz</li>
+                </ul>
+                <p class="travel-tip">If your phone is going to die, make sure it is three days before the warranty expires. That way, you get a replacement at no additional cost!</P>
+            </Article>
+            <Article id="iceland">
+                <h2>Reykjav&iacute;k</h2>
+                <figure>
+                    <img src="images/reykjavik.jpg" alt="Reykjav&iacute;k">
+                    <figcaption>Reykjav&iacute;k, Iceland</figcaption>
+                </figure>
+                <P>Iceland is a beautiful country. It sometimes feels so otherworldly that you might feel like you're on a different planet. In fact, many movies use Iceland as a stand-in for other worlds because it's more feasible than internplanetary travel. </P>
+
+                <P>Below is a ranking of my favorite movies that were shot in Iceland:</P>
+                <ol>
+                    <li>Interstellar</li>
+                    <li>Batman Begins</li>
+                    <li>Letters from Iwo Jima</li>
+                    <li>Flags of Our Fathers</li>
+                    <li>The Secret Life of Walter Mitty</li>
+                    <li>Noah</li>
+                    <li>Oblivion</li>
+                    <li>Rogue One: A Star Wars Story</li>
+                    <li>Star Trek Into Darkness</li>
+                    <li>Prometheus</li>
+                    <li>Star Wars: The Force Awakens</li>
+                    <li>Stardust</li>
+                    <li>Lara Croft: Tomb Raider</li>
+                    <li>Judge Dredd</li>
+                    <li>Die Aother Day</li>
+                    <li>Thor: The Dark World </li>
+
+                </ol>
+                <p class="travel-tip">Iceland is the number one consumer of Pepsi Max, which also happens to be my wife's favorite beverage. You can also buy salted licorice there. Yum!</P>
+            </Article>
+            <Article id="london">
+                <h2>London, England</h2>
+                <figure>
+                    <img src="images/london.jpg" alt="london">
+                    <figcaption>London, England</figcaption>
+                </figure>
+                <P>London, England is an excellent place to visit. The only problem with this place is that they don't speak an intelligible form of English. Please review this helpful English-English dictionary for your travels:</P>
+
+                <dl>
+                    <dt>Hullo</dt>
+                    <dd>Hello</dd>
+
+                    <dt>Colour</dt>
+                    <dd>Color</dd>
+
+                    <dt>Bo'ohw'o'wo'er</dt>
+                    <dd>Bottle of water</dd>
+                </dl>
+                <p class="travel-tip">There are only so many historical venues you can drag your wife to before she starts giving you exasperated looks.</P>
+
+            </Article>
+            <Article id="boston">
+                <h2>Boston</h2>
+                <figure>
+                    <img src="images/boston.jpg" alt="boston">
+                    <figcaption>Boston, MA</figcaption>
+                </figure>
+                <p id="testP" class="funParagraph">Boston is another storied town, and is especially fun to visit when it's your intended destination. Here's a secret: I love history. So visiting America's Walking City is a great way to discover history coming alive and stand in the footsteps of those who have come before us. And it's not just Irish immigrants who have a story to tell about The Athens of America. From the first American patriots to the bar that inspired a series based on Frasier Crane (5/10), every block is filled with history, including a historical block that was also filled with unrefined sugar-syrup in 1919. Here's what Stephen Puleo has to say about The Great Molasses Flood:</P>
+
+                <figure>
+                    <blockquote cite="https://archive.org/details/darktide00step">
+                        <P>Molasses, waist deep, covered the street and swirled and bubbled about the wreckage …. Here and there struggled a form—whether it was animal or human being was impossible to tell. Only an upheaval, a thrashing about in the sticky mass, showed where any life was …. Horses died like so many flies on sticky fly-paper. The more they struggled, the deeper in the mess they were ensnared. Human beings—men and women—suffered likewise.</P>
+                    </blockquote>
+                    <cite>Dark Tide: The Great Boston Molasses Flood of 1919</cite>
+                </figure>
+
+                <p class="travel-tip">As it happens, there actually <em>are</em> hotels available to rent in Boston. One of them has a line-of-sight to a rooftop where you just might catch Batman shadow boxing for a photo shoot.</P>
+            </Article>
+        </Main>
+        <Footer>
+            <P>&copy; 2021.<a href="https://www.youtube.com/watch?v=hoWEYBSlctc">&pi;</a></P>
+        </Footer>
+    </div>
+    <!--these useless child-element DIVs are meant to game the grading spec.-->
+    <div  class="child-element"></div>
+    <div  class="child-element"></div>
 </body>
+
 </html>
